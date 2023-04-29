@@ -1,0 +1,261 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    vertical-align: middle;
+}
+
+.content-panel {
+    /* background-color: green; */
+    border: 1px solid #cccccc;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* div include start button */
+.start-anim-div {
+    position: absolute;
+    width: 177%;
+    height: 37.82%;
+    background: #009CE0;
+    transform: rotate(45deg);
+    transform-origin: 0% 0%;
+    border-radius: 3vh;
+    left: -113.2%;
+    top: -83.5%;
+    opacity: 0;
+    animation-name: startanim;
+    animation-duration: 0.5s;
+    animation-delay: 0.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes startanim {
+    from {
+        left: -113.2%;
+        top: -83.5%;
+        opacity: 0;
+    }
+
+    to {
+        left: 54.63%;
+        top: 4.87%;
+        opacity: 1;
+    }
+}
+
+/* div include start button */
+.top-anim-div {
+    position: absolute;
+    width: 98%;
+    height: 53%;
+    background-image: url("./cover/png/tna-digital-screen-image-roll-1.png");
+    background-size: 100% 100%;
+    transform: rotate(45deg);
+    transform-origin: 0% 0%;
+    border-radius: 3vh;
+    left: -43.2%;
+    top: -36.2%;
+    animation-name: topanim;
+    animation-duration: 0.5s;
+    animation-delay: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes topanim {
+    from {
+        left: -13.3%;
+        top: -47.2%;
+    }
+
+    to {
+        left: 23.9%;
+        top: -32.6%;
+    }
+}
+
+/* blue div */
+.blue-anim-div {
+    position: absolute;
+    width: 158.42%;
+    height: 33.85%;
+    background: #1D3E8E;
+    border-radius: 3vh;
+    transform: rotate(45deg);
+    transform-origin: 0% 0%;
+    animation-name: blueanim;
+    animation-duration: 0.5s;
+    animation-delay: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    left: 35%;
+    top: 49%;
+    opacity: 0;
+}
+
+@keyframes blueanim {
+    from {
+        left: 35%;
+        top: 49%;
+        opacity: 0;
+    }
+
+    to {
+        left: -96.76%;
+        top: -20.31%;
+        opacity: 1;
+    }
+}
+
+/* image div */
+.image-anim-div {
+    position: absolute;
+    width: 64.6%;
+    height: 33.85%;
+    background-image: url("./cover/png/tna-digital-screen-image-roll-2.png");
+    background-size: 100% 100%;
+    transform: rotate(45deg);
+    transform-origin: 0% 0%;
+    border-radius: 3vh;
+    left: -85%;
+    top: -14.1%;
+    animation-name: imageanim;
+    animation-duration: 0.5s;
+    animation-delay: 0.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes imageanim {
+    from {
+        left: -85%;
+        top: -14.1%;
+    }
+
+    to {
+        left: 16.31%;
+        top: 39.33%;
+    }
+}
+
+/* up and down line anim */
+
+.up-anim-line {
+    position: absolute;
+    width: 24.4%;
+    height: 14.9%;
+    left: 8%;
+    top: -24.1%;
+    background-image: url('./cover/png/tna-digital-screen-lines-1.png');
+    animation-name: uplineanim;
+    animation-duration: 0.5s;
+    animation-delay: 1.1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes uplineanim {
+    from {
+        left: 8%;
+        top: -24.1%;
+    }
+
+    to {
+        top: -6%;
+        left:42%;
+    }
+}
+
+.up-anim-line1 {
+    position: absolute;
+    width: 24.4%;
+    height: 14.9%;
+    left: 8%;
+    top: -24.1%;
+    background-image: url('./cover/png/tna-digital-screen-lines-1.png');
+    animation-name: uplineanim1;
+    animation-duration: 1.2s;
+    animation-delay: 1.1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes uplineanim1 {
+    from {
+        left: 8%;
+        top: -24.1%;
+        opacity: 1;
+    }
+
+    to {
+        left:100%;
+        top: 25%;
+        opacity: 0;
+    }
+}
+
+.down-anim-line {
+    position: absolute;
+    width: 24.4%;
+    height: 14.9%;
+    left: 100%;
+    top: 85%;
+    background-image: url('./cover/png/tna-digital-screen-lines-2.png');
+    animation-name: downlineanim;
+    animation-duration: 0.3s;
+    animation-delay: 0.8s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes downlineanim {
+    from {
+        left: 100%;
+        top: 85%;
+    }
+
+    to {
+        left: 81%;
+        top: 75%;
+    }
+}
+
+.down-anim-line1 {
+    position: absolute;
+    width: 24.4%;
+    height: 14.9%;
+    left: 100%;
+    top: 85%;
+    background-image: url('./cover/png/tna-digital-screen-lines-2.png');
+    animation-name: downlineanim1;
+    animation-duration: 1.2s;
+    animation-delay: 0.8s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes downlineanim1 {
+    from {
+        left: 100%;
+        top: 85%;
+        opacity: 1;
+    }
+
+    to {
+        left:10%;
+        top: 37%;
+        opacity: 0;
+    }
+}

@@ -15,22 +15,26 @@ $(document).ready(function() {
 
 
     var text = document.getElementById('small-content');
-    var newDom = '';
-    var animationDelay = 10;
+    if(text) {
 
-    for(let i = 0; i < text.innerText.length; i++)
-    {
-        newDom += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
+        var newDom = '';
+        var animationDelay = 10;
+    
+        for(let i = 0; i < text.innerText.length; i++)
+        {
+            newDom += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
+        }
+    
+        text.innerHTML = newDom;
+        var length = text.children.length;
+    
+        for(let i = 0; i < length; i++)
+        {
+            text.children[i].style['animation-delay'] = animationDelay * i + 3600 + 'ms';
+        }
+    
     }
-
-    text.innerHTML = newDom;
-    var length = text.children.length;
-
-    for(let i = 0; i < length; i++)
-    {
-        text.children[i].style['animation-delay'] = animationDelay * i + 3600 + 'ms';
-    }
-
+    $("#content").fadeIn();
 });
 
 $(window).resize(function() {

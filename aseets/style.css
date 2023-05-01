@@ -25,6 +25,9 @@ body {
     height: 13%;
 }
 
+/*
+    * ======================== start page style ================================
+*/
 /* div include start button */
 .start-anim-div {
     position: absolute;
@@ -46,13 +49,7 @@ body {
 }
 
 @keyframes startanim {
-    from {
-        left: -113.2%;
-        top: -83.5%;
-        opacity: 0;
-    }
-
-    to {
+        to {
         left: 54.63%;
         top: 4.87%;
         opacity: 1;
@@ -69,8 +66,8 @@ body {
     transform: rotate(45deg);
     transform-origin: 0% 0%;
     border-radius: 3vh;
-    left: -43.2%;
-    top: -36.2%;
+    left: -30.3%;
+    top: -57.2%;
     animation-name: topanim;
     animation-duration: 0.5s;
     animation-delay: 1.2s;
@@ -80,11 +77,6 @@ body {
 }
 
 @keyframes topanim {
-    from {
-        left: -13.3%;
-        top: -47.2%;
-    }
-
     to {
         left: 23.9%;
         top: -32.6%;
@@ -112,12 +104,6 @@ body {
 }
 
 @keyframes blueanim {
-    from {
-        left: 35%;
-        top: 49%;
-        opacity: 0;
-    }
-
     to {
         left: -96.76%;
         top: -20.31%;
@@ -146,11 +132,6 @@ body {
 }
 
 @keyframes imageanim {
-    from {
-        left: -85%;
-        top: -14.1%;
-    }
-
     to {
         left: 16.31%;
         top: 39.33%;
@@ -176,11 +157,6 @@ body {
 }
 
 @keyframes uplineanim {
-    from {
-        left: 8%;
-        top: -24.1%;
-    }
-
     to {
         top: -6%;
         left:42%;
@@ -204,12 +180,6 @@ body {
 }
 
 @keyframes uplineanim1 {
-    from {
-        left: 8%;
-        top: -24.1%;
-        opacity: 1;
-    }
-
     to {
         left:100%;
         top: 25%;
@@ -234,11 +204,6 @@ body {
 }
 
 @keyframes downlineanim {
-    from {
-        left: 100%;
-        top: 85%;
-    }
-
     to {
         left: 81%;
         top: 75%;
@@ -262,12 +227,6 @@ body {
 }
 
 @keyframes downlineanim1 {
-    from {
-        left: 100%;
-        top: 85%;
-        opacity: 1;
-    }
-
     to {
         left:10%;
         top: 37%;
@@ -283,6 +242,7 @@ body {
     height: 9.08%;
     top: -10%;
     right: 6%;
+    opacity: 0%;
     background-image: url('./cover/png/tna-digital-screen-logo-cover.png');
     background-size: 100% 100%;
     animation-name: logoanim;
@@ -358,11 +318,6 @@ body {
 }
 
 @keyframes arrowanim {
-    from {
-        left:30%;
-        opacity: 0;
-    }
-
     to {
         left:45%;
         opacity: 1;
@@ -393,11 +348,6 @@ body {
 }
 
 @keyframes sustainableanim {
-    from {
-        left:0%;
-        opacity: 0;
-    }
-
     to {
         left: 53%;
         opacity: 1;
@@ -419,11 +369,6 @@ body {
 }
 
 @keyframes snacksanim {
-    from {
-        left:0%;
-        opacity: 0;
-    }
-
     to {
         left: 32%;
         opacity: 1;
@@ -443,11 +388,6 @@ body {
 }
 
 @keyframes calculatorsanim {
-    from {
-        left:0%;
-        opacity: 0;
-    }
-
     to {
         left: 56%;
         opacity: 1;
@@ -501,18 +441,13 @@ body {
     width: 27.74%;
     height: 3.65%;
     top: 52%;
-    left: 0%;
+    left: 20%;
     opacity: 0;
     animation: buttonanim 0.7s linear 5s forwards,
-            buttonanim1 2s linear 5.9s infinite alternate
+            buttonanim1 1s ease 5.9s infinite alternate
 }
 
 @keyframes buttonanim {
-    from {
-        left:20%;
-        opacity: 0;
-    }
-
     to {
         left: 63%;
         opacity: 1;
@@ -553,3 +488,7 @@ body {
         opacity: 1;
     }
 }
+
+/*
+    * ======================== last page style ================================
+*/
